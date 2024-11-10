@@ -1,5 +1,6 @@
 import { useState } from "react";
 import headerlogo from "../assets/Header/header.svg";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -14,9 +15,11 @@ export function Header() {
     fixed z-50"
     >
       <div className="w-8/12 flex items-center justify-center gap-8">
-        <div className="flex-shrink">
-          <img className="max-w-40 max-h-16" src={headerlogo} alt="" />
-        </div>
+        <Link to={"/"}>
+          <div className="flex-shrink">
+            <img className="max-w-40 max-h-16" src={headerlogo} alt="" />
+          </div>
+        </Link>
         <div>
           <nav>
             <ul
