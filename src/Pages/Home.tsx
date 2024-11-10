@@ -22,11 +22,11 @@ export function Home() {
     <main>
       <section
         className="relative min-w-full min-h-height-full-96px
-       overflow-hidden"
+       overflow-hidden  bg-black"
       >
         <video
           className="absolute top-0 left-0
-           w-full object-cover z-0 "
+           w-full mt-24 object-cover z-0 blur-sm  "
           autoPlay
           loop
           muted
@@ -38,7 +38,7 @@ export function Home() {
           className="relative z-10 
         flex items-center justify-center m-auto w-full h-screen"
         >
-          <div className="absolute top-96 left-20 right-0 ">
+          <div className="absolute top-80 left-20 right-0">
             <h1 className="text-white text-4xl font-roboto font-bold">
               Santuário da <br />
               <span className="text-9xl">
