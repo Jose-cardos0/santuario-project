@@ -59,7 +59,7 @@ export function Slider1() {
           className="w-full max-h-48 
             object-cover rounded-lg 
           cursor-pointer 
-           hover:scale-105 transition duration-300"
+           hover:scale-105 transition duration-300 hover:rounded-lg"
           src={noticia1}
           alt=""
         />

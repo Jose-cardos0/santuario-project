@@ -20,10 +20,13 @@ import footer from "../assets/Home/footer.png";
 export function Home() {
   return (
     <main>
-      <section className="relative min-w-full min-h-height-full-96px overflow-hidden">
+      <section
+        className="relative min-w-full min-h-height-full-96px
+       overflow-hidden"
+      >
         <video
           className="absolute top-0 left-0
-           w-full object-cover z-0 blur-sm"
+           w-full object-cover z-0 "
           autoPlay
           loop
           muted
@@ -312,16 +315,17 @@ export function Home() {
         </p>
         <div
           className="max-w-7xl h-auto  
-        grid grid-cols-3 items-center justify-center m-auto relative mt-14 gap-14"
+        grid grid-cols-3 items-center 
+        justify-center m-auto relative mt-14 gap-14 mb-14"
         >
           <div className="mb-52 cursor-pointer hover:scale-105 transition duration-500">
-            <img src={midia1} alt="" />
+            <img className="" src={midia1} alt="" />
           </div>
           <div className="mt-40 cursor-pointer hover:scale-105 transition duration-500">
-            <img src={midia2} alt="" />
+            <img className="" src={midia2} alt="" />
           </div>
           <div className=" cursor-pointer hover:scale-105 transition duration-500">
-            <img src={midia3} alt="" />
+            <img className="" src={midia3} alt="" />
           </div>
         </div>
       </section>

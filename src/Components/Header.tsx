@@ -39,7 +39,7 @@ export function Header() {
                     className="flex-col items-start
                      justify-center
                    absolute bg-custom-gray
-                    rounded-lg z-50"
+                    rounded-lg z-50 shadow-black shadow-lg w-40"
                   >
                     <p
                       className="hover:bg-slate-200 
@@ -55,7 +55,7 @@ export function Header() {
                     </p>
                     <p
                       className="hover:bg-slate-200  
-                     w-full cursor-pointer px-4 py-1 "
+                     w-full cursor-pointer px-4 py-1 hover:rounded-xl "
                     >
                       Endereço
                     </p>
