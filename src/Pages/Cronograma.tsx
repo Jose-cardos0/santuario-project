@@ -3,6 +3,9 @@ import bgCronograma from "../assets/Cronograma/bgCronograma.png";
 import whats from "../assets/Cronograma/wpp.png";
 import logowhite from "../assets/Cronograma/logoWhite.png";
 
+//motion
+import { motion } from "framer-motion";
+
 export function Cronograma() {
   return (
     <main className="w-full h-screen bg-cutom-gray-strong flex items-center justify-center m-auto">
@@ -10,7 +13,14 @@ export function Cronograma() {
         className="flex-col w-full flex
        items-center justify-center m-auto"
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
           className="w-full flex
          items-center justify-center"
         >
@@ -21,7 +31,7 @@ export function Cronograma() {
           >
             cronograma
           </button>
-        </div>
+        </motion.div>
         <div
           style={{ backgroundImage: `url(${bgCronograma})` }}
           className="w-10/12 p-10 h-auto rounded-md 
@@ -29,7 +39,10 @@ export function Cronograma() {
           bg-cover bg-no-repeat"
         >
           <div className="overflow-x-auto ">
-            <table
+            <motion.table
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
               className="min-w-full border-collapse
               rounded-lg shadow-md "
             >
@@ -92,7 +105,7 @@ export function Cronograma() {
                   <td className="px-4 py-2 text-gray-900">Padre João</td>
                 </tr>
               </tbody>
-            </table>
+            </motion.table>
             <div className="w-full flex items-center justify-between mt-20">
               <div>
                 <img className="max-w-36" src={whats} alt="" />

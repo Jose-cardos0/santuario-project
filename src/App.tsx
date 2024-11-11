@@ -5,6 +5,7 @@ import { Home } from "./Pages/Home";
 import { Cronograma } from "./Pages/Cronograma";
 import { Fundadora } from "./Pages/Fundadora";
 import { NossaHistoria } from "./Pages/NossaHistoria";
+import { Midias } from "./Pages/Midias";
 
 //header
 import { MyHeaderRoot } from "./Components/MyHeaderRoot";
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/nossahistoria",
         element: <NossaHistoria />,
+      },
+      {
+        path: "/midias",
+        element: <Midias />,
       },
     ],
   },
