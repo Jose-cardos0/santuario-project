@@ -188,7 +188,7 @@ export function Midias() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="bg-custom-gray rounded-md shadow-md
-              h-auto w-full shadow-black mb-6 "
+              h-auto w-full shadow-black mb-16 "
             >
               <div className="w-full flex items-center p-3 gap-3">
                 <div>

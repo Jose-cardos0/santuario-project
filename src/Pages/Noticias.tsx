@@ -5,6 +5,9 @@ import { AnimatedY } from "../tools/Animations/AnimatedY";
 //imgs
 import bispo from "../assets/Noticias/bispo.jpg";
 
+//react-router
+import { Link } from "react-router-dom";
+
 export function Noticias() {
   return (
     <main className="w-full min-h-screen flex-col items-center justify-center m-auto bg-cutom-gray-strong">
@@ -92,8 +95,9 @@ export function Noticias() {
               </div>
               <div className="w-11/12 border-2 border-gray-400 flex items-center justify-center m-auto"></div>
               <div className="w-full flex  items-center justify-end p-10">
-                <button
-                  className="relative 
+                <Link to={"/midias"}>
+                  <button
+                    className="relative 
                     overflow-hidden
                     flex-shrink-0
                    bg-custom-button
@@ -101,19 +105,20 @@ export function Noticias() {
                     px-4 rounded-lg shadow-sm
                     shadow-black font-light 
                     border-none "
-                >
-                  <span className="relative z-10 flex items-center justify-center">
-                    ver mídias &rsaquo;
-                  </span>
-                  <span
-                    className="absolute inset-0
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ver mídias &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
               bg-gradient-to-r from-white
                to-black
              transform translate-x-full
               transition-transform
               duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
-                </button>
+                    ></span>
+                  </button>
+                </Link>
               </div>
             </div>
           </AnimatedSection>
@@ -181,8 +186,9 @@ export function Noticias() {
               </div>
               <div className="w-11/12 border-2 border-gray-400 flex items-center justify-center m-auto"></div>
               <div className="w-full flex  items-center justify-end p-10">
-                <button
-                  className="relative 
+                <Link to={"/midias"}>
+                  <button
+                    className="relative 
                     overflow-hidden
                     flex-shrink-0
                    bg-custom-button
@@ -190,25 +196,26 @@ export function Noticias() {
                     px-4 rounded-lg shadow-sm
                     shadow-black font-light 
                     border-none "
-                >
-                  <span className="relative z-10 flex items-center justify-center">
-                    ver mídias &rsaquo;
-                  </span>
-                  <span
-                    className="absolute inset-0
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ver mídias &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
               bg-gradient-to-r from-white
                to-black
              transform translate-x-full
               transition-transform
               duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
-                </button>
+                    ></span>
+                  </button>
+                </Link>
               </div>
             </div>
           </AnimatedY>
           {/*FIM SEGUNDA NOTICIA */}
           <AnimatedY>
-            <div className="w-full flex-col bg-custom-gray rounded-xl drop-shadow-lg shadow-black mt-16">
+            <div className="w-full flex-col bg-custom-gray rounded-xl drop-shadow-lg shadow-black mt-16 mb-16">
               <div className="flex items-center p-10">
                 <img
                   className="max-w-52 rounded-md drop-shadow-lg shadow-black"
@@ -270,8 +277,9 @@ export function Noticias() {
               </div>
               <div className="w-11/12 border-2 border-gray-400 flex items-center justify-center m-auto"></div>
               <div className="w-full flex  items-center justify-end p-10">
-                <button
-                  className="relative 
+                <Link to={"/midias"}>
+                  <button
+                    className="relative 
                     overflow-hidden
                     flex-shrink-0
                    bg-custom-button
@@ -279,19 +287,20 @@ export function Noticias() {
                     px-4 rounded-lg shadow-sm
                     shadow-black font-light 
                     border-none "
-                >
-                  <span className="relative z-10 flex items-center justify-center">
-                    ver mídias &rsaquo;
-                  </span>
-                  <span
-                    className="absolute inset-0
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      ver mídias &rsaquo;
+                    </span>
+                    <span
+                      className="absolute inset-0
               bg-gradient-to-r from-white
                to-black
              transform translate-x-full
               transition-transform
               duration-300 ease-in-out z-0 opacity-20"
-                  ></span>
-                </button>
+                    ></span>
+                  </button>
+                </Link>
               </div>
             </div>
           </AnimatedY>
