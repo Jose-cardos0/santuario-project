@@ -1,10 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import headerlogo from "../assets/Header/header.svg";
 import { Link } from "react-router-dom";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   console.log(isOpen);
+
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleOptionClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <header
@@ -26,7 +46,7 @@ export function Header() {
               className="uppercase flex items-center
              justify-between gap-8 font-light"
             >
-              <div>
+              <div ref={menuRef}>
                 <li
                   onClick={() => setIsOpen((prev) => !prev)}
                   className="font-roboto text-sm hover:bg-slate-200 
@@ -41,19 +61,26 @@ export function Header() {
                    absolute bg-custom-gray
                     rounded-lg z-50 shadow-black shadow-lg w-40"
                   >
-                    <p
-                      className="hover:bg-slate-200 
+                    <Link to={"/fundadora"}>
+                      <p
+                        onClick={handleOptionClick}
+                        className="hover:bg-slate-200 
                       w-full cursor-pointer px-4 py-1 "
-                    >
-                      fundadora
-                    </p>
-                    <p
-                      className="hover:bg-slate-200 
+                      >
+                        fundadora
+                      </p>
+                    </Link>
+                    <Link to={"/nossahistoria"}>
+                      <p
+                        onClick={handleOptionClick}
+                        className="hover:bg-slate-200 
                       w-full cursor-pointer px-4 py-1 "
-                    >
-                      história
-                    </p>
+                      >
+                        história
+                      </p>
+                    </Link>
                     <p
+                      onClick={handleOptionClick}
                       className="hover:bg-slate-200  
                      w-full cursor-pointer px-4 py-1 hover:rounded-xl "
                     >

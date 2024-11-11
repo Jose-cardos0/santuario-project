@@ -1,5 +1,5 @@
 // import bgHome from "../assets/Home/bgHome.svg";
-import animationHome from "../assets/Home/capa1_animation.mp4";
+// import animationHome from "../assets/Home/capa1_animation.mp4";
 //router
 import { Link } from "react-router-dom";
 
@@ -11,37 +11,40 @@ import grid2 from "../assets/Home/grid2.png";
 import grid3 from "../assets/Home/grid3.png";
 import grid4 from "../assets/Home/grid4.png";
 import bgComunidade from "../assets/Home/bgComunidade.png";
-import retangle from "../assets/Home/retangleMedia.png";
 import midia1 from "../assets/Home/midias1.png";
 import midia2 from "../assets/Home/midias2.png";
 import midia3 from "../assets/Home/midias3.png";
-import footer from "../assets/Home/footer.png";
+import capa2Animation from "../assets/Home/capa2_animation.mp4";
+import footerBg from "../assets/Footer/bgFooter.png";
+import pixCod from "../assets/Footer/pixCode.png";
+import pixFrase from "../assets/Footer/pixFrase.png";
+import santuarioPng from "../assets/Home/santuarioPng.png";
 
 export function Home() {
   return (
     <main>
       <section
         className="relative min-w-full min-h-height-full-96px
-       overflow-hidden  bg-black"
+       overflow-hidden bg-black"
       >
         <video
-          className="absolute top-0 left-0
-           w-full mt-24 object-cover z-0 blur-sm  "
+          className="absolute top-0 bottom-0 left-0
+           w-full mt-24 object-cover z-0   "
           autoPlay
           loop
           muted
         >
-          <source src={animationHome} type="video/mp4" />
+          <source src={capa2Animation} type="video/mp4" />
           Seu navegador não suporta a tag de vídeo.
         </video>
         <div
           className="relative z-10 
-        flex items-center justify-center m-auto w-full h-screen"
+        flex items-center justify-center m-auto w-full h-screen max-w-7xl"
         >
-          <div className="absolute top-80 left-20 right-0">
+          <div className="absolute left-0 ">
             <h1 className="text-white text-4xl font-roboto font-bold">
               Santuário da <br />
-              <span className="text-9xl">
+              <span className="text-8xl">
                 Divina <br /> Misericórdia
               </span>
             </h1>
@@ -295,9 +298,8 @@ export function Home() {
       </section>
       {/*IMAGENS */}
       <section
-        style={{ backgroundImage: `url(${retangle})` }}
-        className="bg-cutom-gray-strong 
-          bg-no-repeat bg-cover bg-center "
+        className="bg-cutom-gray-strong pb-12
+           "
       >
         <div className="w-full flex items-center justify-center ">
           <button
@@ -316,7 +318,7 @@ export function Home() {
         <div
           className="max-w-7xl h-auto  
         grid grid-cols-3 items-center 
-        justify-center m-auto relative mt-14 gap-14 mb-14"
+        justify-center m-auto relative mt-14 gap-14"
         >
           <div className="mb-52 cursor-pointer hover:scale-105 transition duration-500">
             <img className="" src={midia1} alt="" />
@@ -329,8 +331,17 @@ export function Home() {
           </div>
         </div>
       </section>
-      <footer className="w-full h-96">
-        <img className="w-full h-full object-cover" src={footer} alt="" />
+      <footer
+        style={{ backgroundImage: `url(${footerBg})` }}
+        className="w-full h-auto bg-cover bg-center bg-no-repeat flex items-center justify-center m-auto"
+      >
+        <div className="max-w-7xl flex items-center justify-between p-10">
+          <img className="max-w-md" src={santuarioPng} alt="" />
+          <div className="flex items-center justify-center">
+            <img src={pixFrase} alt="" />
+            <img className="" src={pixCod} alt="" />
+          </div>
+        </div>
       </footer>
     </main>
   );
