@@ -91,12 +91,14 @@ export function Header() {
                   ""
                 )}
               </div>
-              <li
-                className="font-roboto text-sm hover:bg-slate-200 
+              <Link to={"/noticias"}>
+                <li
+                  className="font-roboto text-sm hover:bg-slate-200 
               cursor-pointer py-2 px-1 rounded-md"
-              >
-                notícias
-              </li>
+                >
+                  notícias
+                </li>
+              </Link>
               <Link to={"/midias"}>
                 <li
                   className="font-roboto text-sm hover:bg-slate-200 

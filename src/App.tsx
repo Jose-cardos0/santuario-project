@@ -6,6 +6,7 @@ import { Cronograma } from "./Pages/Cronograma";
 import { Fundadora } from "./Pages/Fundadora";
 import { NossaHistoria } from "./Pages/NossaHistoria";
 import { Midias } from "./Pages/Midias";
+import { Noticias } from "./Pages/Noticias";
 
 //header
 import { MyHeaderRoot } from "./Components/MyHeaderRoot";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/midias",
         element: <Midias />,
+      },
+      {
+        path: "/noticias",
+        element: <Noticias />,
       },
     ],
   },

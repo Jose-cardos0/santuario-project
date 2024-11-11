@@ -3,7 +3,6 @@ import familiaDantas from "../assets/Fundadora/familiaDants.png";
 
 //animações
 import { AnimatedSection } from "../tools/Animations/AnimatedSections";
-import { AnimatedNegative } from "../tools/Animations/AnimatedNegative";
 import { AnimatedY } from "../tools/Animations/AnimatedY";
 
 export function Fundadora() {
@@ -81,13 +80,13 @@ export function Fundadora() {
           </div>
         </AnimatedSection>
         <div className="w-full overflow-hidden">
-          <AnimatedNegative>
+          <AnimatedSection>
             <img
               className="w-full"
               src={familiaDantas}
               alt="santuario da divina misericordia"
             />
-          </AnimatedNegative>
+          </AnimatedSection>
         </div>
       </section>
     </main>
