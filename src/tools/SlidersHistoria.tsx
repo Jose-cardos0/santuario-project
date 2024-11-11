@@ -26,49 +26,49 @@ export function SliderHistoria() {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16  py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap1}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap2}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap4}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap5}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap6}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap7}
             alt=""
           />
         </SwiperSlide>
-        <SwiperSlide className="px-16">
+        <SwiperSlide className="px-16 py-2">
           <img
             className="object-cover w-full rounded-md shadow-md shadow-black"
             src={cap8}

@@ -1,5 +1,9 @@
 import bgNossaHistoria from "../assets/NossaHistoria/bgHistoria.png";
 import fundadores from "../assets/NossaHistoria/fundadores.png";
+import footerBg from "../assets/Footer/bgFooter.png";
+import pixCod from "../assets/Footer/pixCode.png";
+import pixFrase from "../assets/Footer/pixFrase.png";
+import santuarioPng from "../assets/Home/santuarioPng.png";
 
 //slider
 import { SliderHistoria } from "../tools/SlidersHistoria";
@@ -127,8 +131,11 @@ export function NossaHistoria() {
           </div>
         </div>
       </section>
-      <section className="w-full h-auto flex items-center justify-center m-auto bg-cutom-gray-strong ">
-        <div className="max-w-7xl flex-col items-center justify-center m-auto gap-16 mt-10">
+      <section
+        className="w-full h-auto flex items-center justify-center m-auto
+       bg-cutom-gray-strong "
+      >
+        <div className="max-w-7xl flex-col items-center justify-center m-auto gap-16 mt-10 mb-16">
           <div
             className="w-full flex
          items-center justify-center"
@@ -144,9 +151,32 @@ export function NossaHistoria() {
           <h1 className="text-5xl font-semibold font-roboto text-center my-3 mb-10">
             Apresentação do projeto
           </h1>
-          <div>{/*por video */}</div>
+          <div className="w-full flex items-center justify-center">
+            <video
+              className="shadow-md shadow-black rounded-xl"
+              src={capa2Animation}
+              controls
+              autoPlay
+              loop
+            >
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
         </div>
       </section>
+      <footer
+        style={{ backgroundImage: `url(${footerBg})` }}
+        className="w-full h-auto bg-cover bg-center bg-no-repeat flex 
+        items-center justify-center m-auto"
+      >
+        <div className="max-w-7xl flex items-center justify-between p-10">
+          <img className="max-w-md" src={santuarioPng} alt="" />
+          <div className="flex items-center justify-center">
+            <img src={pixFrase} alt="" />
+            <img className="" src={pixCod} alt="" />
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
