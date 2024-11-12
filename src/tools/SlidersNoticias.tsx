@@ -9,7 +9,10 @@ import { Slider2 } from "./sliders/Slider2";
 
 export function SlidersNoticias() {
   return (
-    <div className="flex items-center justify-center w-full px-64  ">
+    <div
+      className="flex items-center justify-center w-full px-64 
+    mm:max-md:px-0 mm:max-md:py-16 mm:max-md:h-auto  "
+    >
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, Autoplay]}
         slidesPerView={1}

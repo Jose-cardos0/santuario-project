@@ -8,10 +8,13 @@ import { motion } from "framer-motion";
 
 export function Cronograma() {
   return (
-    <main className="w-full h-screen bg-cutom-gray-strong flex items-center justify-center m-auto">
+    <main
+      className="w-full h-screen bg-cutom-gray-strong
+     flex items-center justify-center m-auto mm:max-md:h-full"
+    >
       <section
         className="flex-col w-full flex
-       items-center justify-center m-auto"
+       items-center justify-center m-auto mm:max-md:mt-32"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -36,9 +39,9 @@ export function Cronograma() {
           style={{ backgroundImage: `url(${bgCronograma})` }}
           className="w-10/12 p-10 h-auto rounded-md 
           shadow-lg shadow-black bg-center 
-          bg-cover bg-no-repeat"
+          bg-cover bg-no-repeat mm:max-md:w-11/12 mm:max-md:mt-8 mm:max-md:mb-16 "
         >
-          <div className="overflow-x-auto ">
+          <div className="overflow-x-auto rounded-lg ">
             <motion.table
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}

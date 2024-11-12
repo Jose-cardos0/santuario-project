@@ -12,9 +12,15 @@ export function Noticias() {
   return (
     <main className="w-full min-h-screen flex-col items-center justify-center m-auto bg-cutom-gray-strong">
       <section className="bg-center bg-cover bg-no-repeat max-w-7xl flex items-center justify-center m-auto">
-        <div className="flex-col items-center justify-center w-full">
+        <div
+          className="flex-col items-center
+         justify-center w-full mm:max-md:px-6 mm:max-md:mb-16"
+        >
           <AnimatedSection>
-            <div className="w-full flex-col items-center justify-center mt-40 ">
+            <div
+              className="w-full flex-col items-center
+             justify-center mt-40 "
+            >
               <div
                 className="w-full flex
              items-center justify-center"
@@ -27,21 +33,32 @@ export function Noticias() {
                   notícias
                 </button>
               </div>
-              <h1 className="text-5xl font-semibold font-roboto text-center mt-3">
-                Acompanhe-nos no dia a dia
+              <h1
+                className="text-5xl
+               font-semibold font-roboto text-center mt-3
+               mm:max-md:text-4xl"
+              >
+                Acompanhe-nos no dia a dia!
               </h1>
               <p className=" text-xl text-center font-thin">Últimas notícias</p>
             </div>
             {/*PRIMEIRA NOTICIA */}
-            <div className="w-full flex-col bg-custom-gray rounded-xl drop-shadow-lg shadow-black mt-16">
-              <div className="flex items-center p-10">
+            <div
+              className="w-full flex-col bg-custom-gray rounded-xl 
+            drop-shadow-lg shadow-black mt-16 mm:max-md:mt-8"
+            >
+              <div className="flex items-center p-10 mm:max-md:flex-col">
                 <img
-                  className="max-w-52 rounded-md drop-shadow-lg shadow-black"
+                  className="max-w-52 
+                  rounded-md drop-shadow-lg shadow-black mm:max-md:max-w-72"
                   src={bispo}
                   alt=""
                 />
                 <div className="w-full">
-                  <h1 className="text-5xl font-semibold font-roboto text-center mt-3">
+                  <h1
+                    className="text-5xl
+                   font-semibold font-roboto text-center mt-3 mm:max-md:text-3xl mm:max-md:mt-8"
+                  >
                     Visita do Bispo <br /> ao Santuário
                   </h1>
                 </div>
@@ -124,15 +141,22 @@ export function Noticias() {
           </AnimatedSection>
           {/*FIM PRIMEIRA NOTICIA */}
           <AnimatedY>
-            <div className="w-full flex-col bg-custom-gray rounded-xl drop-shadow-lg shadow-black mt-16">
-              <div className="flex items-center p-10">
+            <div
+              className="w-full flex-col bg-custom-gray rounded-xl 
+            drop-shadow-lg shadow-black mt-16 mm:max-md:mt-8"
+            >
+              <div className="flex items-center p-10 mm:max-md:flex-col">
                 <img
-                  className="max-w-52 rounded-md drop-shadow-lg shadow-black"
+                  className="max-w-52 
+                  rounded-md drop-shadow-lg shadow-black mm:max-md:max-w-72"
                   src={bispo}
                   alt=""
                 />
                 <div className="w-full">
-                  <h1 className="text-5xl font-semibold font-roboto text-center mt-3">
+                  <h1
+                    className="text-5xl
+                   font-semibold font-roboto text-center mt-3 mm:max-md:text-3xl mm:max-md:mt-8"
+                  >
                     Visita do Bispo <br /> ao Santuário
                   </h1>
                 </div>
@@ -215,15 +239,22 @@ export function Noticias() {
           </AnimatedY>
           {/*FIM SEGUNDA NOTICIA */}
           <AnimatedY>
-            <div className="w-full flex-col bg-custom-gray rounded-xl drop-shadow-lg shadow-black mt-16 mb-16">
-              <div className="flex items-center p-10">
+            <div
+              className="w-full flex-col bg-custom-gray rounded-xl 
+            drop-shadow-lg shadow-black mt-16 mm:max-md:mt-8"
+            >
+              <div className="flex items-center p-10 mm:max-md:flex-col">
                 <img
-                  className="max-w-52 rounded-md drop-shadow-lg shadow-black"
+                  className="max-w-52 
+                  rounded-md drop-shadow-lg shadow-black mm:max-md:max-w-72"
                   src={bispo}
                   alt=""
                 />
                 <div className="w-full">
-                  <h1 className="text-5xl font-semibold font-roboto text-center mt-3">
+                  <h1
+                    className="text-5xl
+                   font-semibold font-roboto text-center mt-3 mm:max-md:text-3xl mm:max-md:mt-8"
+                  >
                     Visita do Bispo <br /> ao Santuário
                   </h1>
                 </div>

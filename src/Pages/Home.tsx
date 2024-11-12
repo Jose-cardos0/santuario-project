@@ -37,7 +37,7 @@ export function Home() {
       >
         <video
           className="absolute top-0 bottom-0 left-0
-           w-full mt-24 object-cover z-0   "
+           w-full mt-24 object-cover z-0 mm:max-md:h-screen  "
           autoPlay
           loop
           muted
@@ -47,7 +47,7 @@ export function Home() {
         </video>
         <div
           className="relative z-10 
-        flex items-center justify-center m-auto w-full h-screen max-w-7xl"
+        flex items-center justify-center m-auto w-full h-screen max-w-7xl mm:max-md:ml-2 mm:max-md:mt-8"
         >
           <motion.div
             initial={{ x: "-100%", opacity: 0 }}
@@ -57,7 +57,7 @@ export function Home() {
           >
             <h1 className="text-white text-4xl font-roboto font-bold">
               Santuário da <br />
-              <span className="text-8xl">
+              <span className="text-8xl mm:max-md:text-6xl">
                 Divina <br /> Misericórdia
               </span>
             </h1>
@@ -103,8 +103,11 @@ export function Home() {
             Particide das nossas missas e orações
           </p>
           <AnimatedNegative>
-            <div className="max-w-7xl h-auto mt-6 overflow-hidden">
-              <div className="w-full grid grid-cols-4 gap-8">
+            <div className="max-w-7xl h-auto mt-6 overflow-hidden mm:max-md:p-8">
+              <div
+                className="w-full grid grid-cols-4 gap-8 
+              mm:max-md:grid-cols-1 mm:max-md:w-full"
+              >
                 <div className="relative">
                   <img
                     className="w-full bg-cover drop-shadow-lg
@@ -275,8 +278,8 @@ export function Home() {
                 comunidade
               </button>
             </div>
-            <div className="max-w-7xl">
-              <p className="text-justify mt-8 w-2/3 font-roboto">
+            <div className="max-w-7xl ">
+              <p className="text-justify mt-8 w-2/3 font-roboto mm:max-md:w-full mm:max-md:px-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo, sequi! Iure ratione dolorem adipisci explicabo
                 aperiam aut facere, ut aspernatur hic, officia maiores, dolores
@@ -330,7 +333,10 @@ export function Home() {
            "
       >
         <AnimatedNegative>
-          <div className="w-full flex items-center justify-center overflow-hidden ">
+          <div
+            className="w-full flex items-center justify-center
+           overflow-hidden "
+          >
             <button
               className="uppercase bg-custom-button text-white
             px-2 rounded-md mb-2 mt-14"
@@ -347,15 +353,26 @@ export function Home() {
           <div
             className="max-w-7xl h-auto  
         grid grid-cols-3 items-center 
-        justify-center m-auto relative mt-14 gap-14"
+        justify-center m-auto relative
+         mt-14 gap-14 mm:max-md:grid-cols-1
+          mm:max-md:gap-8 mm:max-md:mt-2 mm:max-md:p-8"
           >
-            <div className="mb-52 cursor-pointer hover:scale-105 transition duration-500">
+            <div
+              className="mb-52 cursor-pointer hover:scale-105 
+            transition duration-500 mm:max-md:mb-0"
+            >
               <img className="" src={midia1} alt="" />
             </div>
-            <div className="mt-40 cursor-pointer hover:scale-105 transition duration-500">
+            <div
+              className="mt-40 mm:max-md:mt-0 cursor-pointer hover:scale-105
+             transition duration-500"
+            >
               <img className="" src={midia2} alt="" />
             </div>
-            <div className=" cursor-pointer hover:scale-105 transition duration-500">
+            <div
+              className=" cursor-pointer hover:scale-105
+             transition duration-500"
+            >
               <img className="" src={midia3} alt="" />
             </div>
           </div>
@@ -363,13 +380,21 @@ export function Home() {
       </section>
       <footer
         style={{ backgroundImage: `url(${footerBg})` }}
-        className="w-full h-auto bg-cover bg-center bg-no-repeat flex items-center justify-center m-auto"
+        className="w-full h-auto bg-cover bg-center bg-no-repeat
+         flex items-center justify-center m-auto"
       >
-        <div className="max-w-7xl flex items-center justify-between p-10">
+        <div
+          className="max-w-7xl flex items-center
+         justify-between p-10 mm:max-md:flex-col"
+        >
           <img className="max-w-md" src={santuarioPng} alt="" />
-          <div className="flex items-center justify-center">
-            <img src={pixFrase} alt="" />
-            <img className="" src={pixCod} alt="" />
+          <div className="flex items-center justify-center mm:max-md:flex-col mm:max-md:gap-8">
+            <img src={pixFrase} alt="santuario divina misericordia" />
+            <img
+              className="mm:max-md:hidden"
+              src={pixCod}
+              alt="santuario divina misericorda"
+            />
           </div>
         </div>
       </footer>

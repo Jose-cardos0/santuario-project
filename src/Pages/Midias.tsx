@@ -20,10 +20,16 @@ export function Midias() {
               mídia digital
             </button>
           </div>
-          <h1 className="text-5xl font-semibold font-roboto text-center mt-3">
+          <h1
+            className="text-5xl font-semibold 
+          font-roboto text-center mt-3"
+          >
             Álbuns de recordações
           </h1>
-          <div className="w-full flex-col items-center justify-center mt-16">
+          <div
+            className="w-full flex-col
+           items-center justify-center mt-16 mm:max-md:px-8 mm:max-md:mt-8 mm:max-md:mb-16"
+          >
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -31,19 +37,23 @@ export function Midias() {
               className="bg-custom-gray rounded-md shadow-md
               h-auto w-full shadow-black mb-6 "
             >
-              <div className="w-full flex items-center p-3 gap-3">
-                <div>
+              <div
+                className="w-full flex items-center
+               p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
+              >
+                <div className="w-full">
                   <img
-                    className="max-w-52 shadow-md shadow-black rounded-md"
+                    className="max-w-52 shadow-md shadow-black
+                     rounded-md mm:max-md:max-w-64"
                     src={fundacao}
                     alt=""
                   />
                 </div>
-                <div className="w-full">
+                <div className="w-full mm:max-md:mt-6">
                   <h1 className="font-roboto font-light text-3xl ">
                     Fotos do dia 16/01/2024 - Pedra fundamental.
                   </h1>
-                  <p className="font-light">
+                  <p className="font-light mm:max-md:text-justify">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere ut architecto impedit repudiandae amet vero ad
                     mollitia cumque sapiente incidunt? Accusantium quisquam
@@ -78,25 +88,29 @@ export function Midias() {
             </motion.div>
             {/*INICIA OUTRO GRID */}
             <motion.div
-              initial={{ x: "100%", opacity: 0 }}
+              initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="bg-custom-gray rounded-md shadow-md
               h-auto w-full shadow-black mb-6 "
             >
-              <div className="w-full flex items-center p-3 gap-3">
-                <div>
+              <div
+                className="w-full flex items-center
+               p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
+              >
+                <div className="w-full">
                   <img
-                    className="max-w-52 shadow-md shadow-black rounded-md"
+                    className="max-w-52 shadow-md shadow-black
+                     rounded-md mm:max-md:max-w-64"
                     src={fundacao}
                     alt=""
                   />
                 </div>
-                <div className="w-full">
+                <div className="w-full mm:max-md:mt-6">
                   <h1 className="font-roboto font-light text-3xl ">
                     Fotos do dia 16/01/2024 - Pedra fundamental.
                   </h1>
-                  <p className="font-light">
+                  <p className="font-light mm:max-md:text-justify">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere ut architecto impedit repudiandae amet vero ad
                     mollitia cumque sapiente incidunt? Accusantium quisquam
@@ -137,19 +151,23 @@ export function Midias() {
               className="bg-custom-gray rounded-md shadow-md
               h-auto w-full shadow-black mb-6 "
             >
-              <div className="w-full flex items-center p-3 gap-3">
-                <div>
+              <div
+                className="w-full flex items-center
+               p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
+              >
+                <div className="w-full">
                   <img
-                    className="max-w-52 shadow-md shadow-black rounded-md"
+                    className="max-w-52 shadow-md shadow-black
+                     rounded-md mm:max-md:max-w-64"
                     src={fundacao}
                     alt=""
                   />
                 </div>
-                <div className="w-full">
+                <div className="w-full mm:max-md:mt-6">
                   <h1 className="font-roboto font-light text-3xl ">
                     Fotos do dia 16/01/2024 - Pedra fundamental.
                   </h1>
-                  <p className="font-light">
+                  <p className="font-light mm:max-md:text-justify">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere ut architecto impedit repudiandae amet vero ad
                     mollitia cumque sapiente incidunt? Accusantium quisquam
@@ -184,25 +202,29 @@ export function Midias() {
             </motion.div>
             {/*INICIA OUTRO GRID */}
             <motion.div
-              initial={{ x: "100%", opacity: 0 }}
+              initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="bg-custom-gray rounded-md shadow-md
-              h-auto w-full shadow-black mb-16 "
+              h-auto w-full shadow-black mb-6 "
             >
-              <div className="w-full flex items-center p-3 gap-3">
-                <div>
+              <div
+                className="w-full flex items-center
+               p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
+              >
+                <div className="w-full">
                   <img
-                    className="max-w-52 shadow-md shadow-black rounded-md"
+                    className="max-w-52 shadow-md shadow-black
+                     rounded-md mm:max-md:max-w-64"
                     src={fundacao}
                     alt=""
                   />
                 </div>
-                <div className="w-full">
+                <div className="w-full mm:max-md:mt-6">
                   <h1 className="font-roboto font-light text-3xl ">
                     Fotos do dia 16/01/2024 - Pedra fundamental.
                   </h1>
-                  <p className="font-light">
+                  <p className="font-light mm:max-md:text-justify">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere ut architecto impedit repudiandae amet vero ad
                     mollitia cumque sapiente incidunt? Accusantium quisquam
@@ -235,6 +257,7 @@ export function Midias() {
                 </div>
               </div>
             </motion.div>
+
             {/*fim grid */}
           </div>
         </div>

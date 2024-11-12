@@ -40,7 +40,7 @@ export function NossaHistoria() {
               História do Santuário da Divina Misericórdia
             </h1>
             <div className="w-full flex items-center justify-center m-auto mt-14">
-              <p className="w-full mb-14 text-justify">
+              <p className="w-full mb-14 text-justify mm:max-md:px-8">
                 Imagine uma comunidade católica radiante, onde o amor, a
                 harmonia e a fé são vivenciados intensamente. Esta comunidade
                 encontra sua base sólida em Jesus Cristo, visto como o centro de
@@ -111,9 +111,16 @@ export function NossaHistoria() {
           </div>
         </AnimatedSection>
       </section>
-      <section className="w-full h-auto flex items-center justify-center m-auto bg-cutom-gray-strong overflow-hidden ">
+      <section
+        className="w-full h-auto flex items-center
+       justify-center m-auto bg-cutom-gray-strong overflow-hidden  "
+      >
         <AnimatedNegative>
-          <div className="max-w-7xl flex items-center justify-center m-auto gap-16 mt-10 overflow-hidden">
+          <div
+            className="max-w-7xl flex items-center justify-center
+           m-auto gap-16 mt-10 overflow-hidden mm:max-md:flex-col
+            mm:max-md:px-8 mm:max-md:mt-16"
+          >
             <div>
               <img
                 className="drop-shadow-lg shadow-black"
@@ -121,7 +128,10 @@ export function NossaHistoria() {
                 alt=""
               />
             </div>
-            <div className="w-full flex items-center justify-center m-auto mt-14 overflow-hidden">
+            <div
+              className="w-full flex items-center 
+            justify-center m-auto mt-14 overflow-hidden mm:max-md:mt-0"
+            >
               <p className="w-full mb-14 text-justify">
                 Imagine uma comunidade católica radiante, onde o amor, a
                 harmonia e a fé são vivenciados intensamente. Esta comunidade
@@ -149,7 +159,11 @@ export function NossaHistoria() {
        bg-cutom-gray-strong overflow-hidden "
       >
         <AnimatedNegative>
-          <div className="max-w-7xl flex-col items-center justify-center m-auto gap-16 mt-10 mb-16 overflow-hidden">
+          <div
+            className="max-w-7xl
+           flex-col items-center justify-center
+            m-auto gap-16 mt-10 mb-16 overflow-hidden mm:max-md:mt-0"
+          >
             <div
               className="w-full flex
          items-center justify-center"
@@ -162,10 +176,13 @@ export function NossaHistoria() {
                 projeto
               </button>
             </div>
-            <h1 className="text-5xl font-semibold font-roboto text-center my-3 mb-10">
+            <h1
+              className="text-5xl font-semibold
+             font-roboto text-center my-3 mb-10 mm:max-md:px-8"
+            >
               Apresentação do projeto
             </h1>
-            <div className="w-full flex items-center justify-center">
+            <div className="w-full flex items-center justify-center mm:max-md:px-8">
               <video
                 className="shadow-md shadow-black rounded-xl"
                 src={capa2Animation}
@@ -184,11 +201,11 @@ export function NossaHistoria() {
         className="w-full h-auto bg-cover bg-center bg-no-repeat flex 
         items-center justify-center m-auto"
       >
-        <div className="max-w-7xl flex items-center justify-between p-10">
+        <div className="max-w-7xl flex items-center justify-between p-10 mm:max-md:flex-col">
           <img className="max-w-md" src={santuarioPng} alt="" />
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mm:max-md:flex-col">
             <img src={pixFrase} alt="" />
-            <img className="" src={pixCod} alt="" />
+            <img className="mm:max-md:hidden" src={pixCod} alt="" />
           </div>
         </div>
       </footer>

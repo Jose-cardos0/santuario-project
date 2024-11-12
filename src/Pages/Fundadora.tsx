@@ -35,7 +35,7 @@ export function Fundadora() {
             A mãe de toda uma geração!
           </h1>
           <div className="w-full flex items-center justify-center m-auto mt-14">
-            <p className=" max-w-3xl">
+            <p className=" max-w-3xl mm:max-md:px-8 text-justify">
               Imagine uma comunidade católica radiante, onde o amor, a harmonia
               e a fé são vivenciados intensamente. Esta comunidade encontra sua
               base sólida em Jesus Cristo, visto como o centro de tudo, o
@@ -82,7 +82,7 @@ export function Fundadora() {
         <div className="w-full overflow-hidden">
           <AnimatedSection>
             <img
-              className="w-full"
+              className="w-full mm:max-md:my-16"
               src={familiaDantas}
               alt="santuario da divina misericordia"
             />
