@@ -202,7 +202,7 @@ export function NossaHistoria() {
         items-center justify-center m-auto"
       >
         <div className="max-w-7xl flex items-center justify-between p-10 mm:max-md:flex-col">
-          <img className="max-w-md" src={santuarioPng} alt="" />
+          <img className="max-w-md mm:max-md:w-80" src={santuarioPng} alt="" />
           <div className="flex items-center justify-center mm:max-md:flex-col">
             <img src={pixFrase} alt="" />
             <img className="mm:max-md:hidden" src={pixCod} alt="" />
