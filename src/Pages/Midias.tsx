@@ -41,7 +41,7 @@ export function Midias() {
                 className="w-full flex items-center
                p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
               >
-                <div className="w-full">
+                <div className="mm:max-md:w-full">
                   <img
                     className="max-w-52 shadow-md shadow-black
                      rounded-md mm:max-md:max-w-64"
@@ -98,7 +98,7 @@ export function Midias() {
                 className="w-full flex items-center
                p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
               >
-                <div className="w-full">
+                <div className="mm:max-md:w-full">
                   <img
                     className="max-w-52 shadow-md shadow-black
                      rounded-md mm:max-md:max-w-64"
@@ -155,7 +155,7 @@ export function Midias() {
                 className="w-full flex items-center
                p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
               >
-                <div className="w-full">
+                <div className="mm:max-md:w-full">
                   <img
                     className="max-w-52 shadow-md shadow-black
                      rounded-md mm:max-md:max-w-64"
@@ -212,7 +212,7 @@ export function Midias() {
                 className="w-full flex items-center
                p-3 gap-3 mm:max-md:flex-col mm:max-md:p-8"
               >
-                <div className="w-full">
+                <div className="mm:max-md:w-full">
                   <img
                     className="max-w-52 shadow-md shadow-black
                      rounded-md mm:max-md:max-w-64"
