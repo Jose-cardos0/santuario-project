@@ -96,7 +96,10 @@ export function Home() {
               agenda
             </button>
           </div>
-          <h1 className="text-5xl font-semibold font-roboto text-center">
+          <h1
+            className="text-5xl font-semibold font-roboto text-center
+          mm:max-md:text-4xl mm:max-md:px-8"
+          >
             Venha conhecer nossa comunidade católica
           </h1>
           <p className=" text-xl text-center font-thin">
@@ -344,7 +347,10 @@ export function Home() {
               mídias
             </button>
           </div>
-          <h1 className="font-roboto font-semibold text-5xl text-center mt-5">
+          <h1
+            className="font-roboto font-semibold text-5xl text-center mt-5
+            mm:max-md:px-8"
+          >
             Albuns de fotos e vídeos
           </h1>
           <p className=" text-xl text-center font-thin">
