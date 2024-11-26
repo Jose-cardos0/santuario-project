@@ -35,7 +35,7 @@ export function SliderHistoria() {
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, Autoplay]}
         slidesPerView={1}
-        navigation={isMobile ? true : false}
+        navigation={isMobile ? false : true}
         pagination={isMobile ? { clickable: true } : { clickable: false }}
         className="mySwiper"
         autoplay={{

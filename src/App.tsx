@@ -8,6 +8,7 @@ import { NossaHistoria } from "./Pages/NossaHistoria";
 import { Midias } from "./Pages/Midias";
 import { Noticias } from "./Pages/Noticias";
 import { QueroAjudar } from "./Pages/QueroAjudar";
+import { Adoracao } from "./Pages/Adoracao";
 
 //header
 import { MyHeaderRoot } from "./Components/MyHeaderRoot";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/queroajudar",
         element: <QueroAjudar />,
+      },
+      {
+        path: "/adoracao",
+        element: <Adoracao />,
       },
     ],
   },

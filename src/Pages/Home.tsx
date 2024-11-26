@@ -207,9 +207,11 @@ export function Home() {
                     shadow-black font-light 
                     border-none "
                     >
-                      <span className="relative z-10 flex items-center justify-center">
-                        ver mais &rsaquo;
-                      </span>
+                      <Link to={"/adoracao"}>
+                        <span className="relative z-10 flex items-center justify-center">
+                          ver mais &rsaquo;
+                        </span>
+                      </Link>
                       <span
                         className="absolute inset-0
               bg-gradient-to-r from-white
