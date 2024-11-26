@@ -11,15 +11,32 @@ import cap6 from "../assets/NossaHistoria/cap6.png";
 import cap8 from "../assets/NossaHistoria/cap8.png";
 import cap7 from "../assets/NossaHistoria/cap7.png";
 import cap1 from "../assets/NossaHistoria/cap1.png";
+import { useEffect, useState } from "react";
 
 export function SliderHistoria() {
+  const [isMobile, setIsMobile] = useState<Boolean>(false);
+
+  useEffect(() => {
+    function handleSize() {
+      if (window.innerWidth <= 480) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+
+    handleSize();
+    window.addEventListener("resize", handleSize);
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
+
   return (
     <div className="flex items-center justify-center w-full mb-16  ">
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, Autoplay]}
         slidesPerView={1}
-        navigation={true}
-        // pagination={{ clickable: true }}
+        navigation={isMobile ? true : false}
+        pagination={isMobile ? { clickable: true } : { clickable: false }}
         className="mySwiper"
         autoplay={{
           delay: 3000,
