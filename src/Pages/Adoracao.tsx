@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 import { AnimatedY } from "../tools/Animations/AnimatedY";
 
+import { PiShareFatBold } from "react-icons/pi";
+
 interface propsSalmos {
   referencia: string;
   refrao: string;
@@ -59,6 +61,13 @@ export function Adoracao() {
     conectApi();
   }, []);
 
+  const handleShare = () => {
+    const url = encodeURIComponent(window.location.href);
+    const message = encodeURIComponent("Confira esta liturgia!");
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${message} ${url}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <section
       className="flex items-center justify-center
@@ -73,9 +82,18 @@ export function Adoracao() {
          "
           >
             <div className="">
-              <button className="flex items-center justify-center bg-green-500 rounded-lg px-2 font-bold text-white mb-2 shadow-md">
-                Cor litúrgica: {dataProps?.cor}
-              </button>
+              <div className="flex items-center justify-between">
+                <button
+                  className="flex items-center
+                 bg-green-500 rounded-md px-2 font-bold
+                  text-white mb-2 shadow-md"
+                >
+                  Cor litúrgica: {dataProps?.cor}
+                </button>
+                <button onClick={handleShare} className="cursor-pointer	">
+                  <PiShareFatBold color="#043C6B" size={30} />
+                </button>
+              </div>
               <h1>Data: {dataProps?.data}</h1>
               <p className="border-b-2 border-gray-300"></p>
               <h1 className="my-4">
