@@ -195,7 +195,7 @@ export function Home() {
                   />
                   <div className="absolute bottom-5 left-4">
                     <p className="font-semibold text-custom-button text-2xl mb-2">
-                      Adoração
+                      Evangelho
                     </p>
                     <button
                       className="relative 
