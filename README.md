@@ -23,3 +23,16 @@ Promover a fé e a espiritualidade por meio de uma plataforma digital moderna, c
 1. Clone este repositório:
 2. Instale as dependências;  
 3. Execute com npm rund dev; 
+
+## Imagens do projeto desktop
+
+![image](https://github.com/user-attachments/assets/26bdaf29-61ca-46b8-b646-f20fdfd12f08) </br>
+![image](https://github.com/user-attachments/assets/4e8fb7df-bc57-44f8-b672-588d163b645f) </br>
+
+## Imagens do projeto Mobile
+
+![image](https://github.com/user-attachments/assets/86f93c78-ec56-4d56-a93e-b734e53864f6) </br>
+![image](https://github.com/user-attachments/assets/37261185-c8d1-41fc-9a63-d013068636de) </br>
+
+
+
